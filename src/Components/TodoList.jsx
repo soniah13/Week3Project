@@ -38,7 +38,7 @@ const TodoList = ({}) => {
     <div className='container text-center w-96 bg-rose-500 my-10 mx-10 p-10 rounded-md'>
       <h1 className='text-align font-bold mb-3 underline text-2xl'>My Todo List</h1>
       <div className='flex py-2 px-2 bg-slate-200 my-5'>
-        <button onClick={handleSearch} className='border outline-none border-solid border-2 px-2'>search task</button>
+        <button onClick={handleSearch} className='border outline-none border-solid border-2 px-2'>Search</button>
         <input className='bg-black text-white ' type='text' placeholder='search your task' value={searchTask} onChange={handleSearch}/>
       </div>
     <Form  addTodo={addTodo}/>
