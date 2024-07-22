@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Task from './TodoList';
 
     const EditTask = ({editTodo, task}) => {
-        const [value, setValue] = useState("");
+        const [value, setValue] = useState(task.task);
         const handleSubmit = e => {
             e.preventDefault();
             editTodo(value,task.id)
